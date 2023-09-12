@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Personal Blog</title>
-    <!-- Meta tags for description, keywords, and author -->
+
     <meta
       name="description"
       content="Welcome to Zahid Alabadllah's personal blog, where he shares thoughts, experiences, and hobbies."
@@ -14,40 +14,35 @@
       content="Zahid Alabadllah, personal blog, thoughts, experiences, hobbies"
     />
     <meta name="author" content="Zahid Alabadllah" />
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-        margin: 0;
-        padding: 0;
-      }
-      header {
+  </head>
+  <body
+    style="
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    "
+  >
+    <header
+      style="
         background-color: #333;
         color: #fff;
         text-align: center;
         padding: 1rem 0;
-      }
-      .container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-      }
-      h1 {
-        color: #ffffff;
-      }
-      img {
-        max-width: 100%;
-        height: auto;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>Zahid Alabadllah</h1>
+      "
+    >
+      <h1 style="color: #ffffff">Zahid Alabadllah</h1>
     </header>
-    <section class="container">
+    <section
+      class="container"
+      style="max-width: 800px; margin: 0 auto; padding: 20px"
+    >
       <figure>
-        <img src="Zahid.png" alt="Cover Image" />
+        <img
+          src="Zahid.png"
+          alt="Cover Image"
+          style="max-width: 100%; height: auto"
+        />
       </figure>
       <article>
         <h2>Welcome to My Blog</h2>
@@ -60,7 +55,7 @@
       <article>
         <h2>My Hobbies</h2>
         <p>Below are my top hobbies:</p>
-        <table border="1">
+        <table border="1" style="border-collapse: collapse; width: 100%">
           <thead>
             <tr>
               <th>Hobby</th>
@@ -93,13 +88,24 @@
       </article>
 
       <aside>
-        <h2>Quick Links</h2>
-        <ul>
-          <li><a href="about.html">About Me & CS</a></li>
-          <li><a href="contact.html">My Contact Details</a></li>
-          <li><a href="hire_me.html"> Get hired</a></li>
-        </ul>
+        <h2>About Me</h2>
+        <p>Find more about me in the links below.</p>
       </aside>
     </section>
+    <footer
+      style="
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1rem 0;
+      "
+    >
+      <nav>
+        <a href="about.html" style="color: #007bff">About</a>
+        <a href="contact.html" style="color: #007bff">Contact</a>
+        <a href="hire_me.html" style="color: #007bff">Hire Me</a>
+      </nav>
+      <p>&copy; 2023 Zahid Alabadllah. All rights reserved.</p>
+    </footer>
   </body>
 </html>
