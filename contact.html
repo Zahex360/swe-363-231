@@ -22,46 +22,14 @@
         margin: 0 auto;
         padding: 20px;
       }
-      .contact-logo-email {
-        width: 30px; /* Adjust the width as needed */
-        height: 30px; /* Adjust the height as needed */
-        margin-right: 10px;
-        border-radius: 50%; /* Make it circular */
+      h1 {
+        color: #ffffff;
       }
-      .contact-logo-phone {
-        width: 30px; /* Adjust the width as needed */
-        height: 30px; /* Adjust the height as needed */
+      img.contact-logo {
+        width: 30px;
+        height: 30px;
         margin-right: 10px;
-        border-radius: 50%; /* Make it circular */
-      }
-      .contact-logo-instagram {
-        width: 30px; /* Adjust the width as needed */
-        height: 30px; /* Adjust the height as needed */
-        margin-right: 10px;
-        border-radius: 50%; /* Make it circular */
-      }
-      .contact-logo-x {
-        width: 30px; /* Adjust the width as needed */
-        height: 30px; /* Adjust the height as needed */
-        margin-right: 10px;
-        border-radius: 50%; /* Make it circular */
-      }
-      .contact-logo-facebook {
-        width: 30px; /* Adjust the width as needed */
-        height: 30px; /* Adjust the height as needed */
-        margin-right: 10px;
-        border-radius: 50%; /* Make it circular */
-      }
-      .contact-logo-youtube {
-        width: 30px; /* Adjust the width as needed */
-        height: 20px; /* Adjust the height as needed */
-        margin-right: 10px;
-      }
-      .contact-logo-location {
-        width: 24px; /* Adjust the width as needed */
-        height: 24px; /* Adjust the height as needed */
-        margin-right: 10px;
-        border-radius: 50%; /* Make it circular */
+        border-radius: 50%;
       }
     </style>
   </head>
@@ -69,70 +37,90 @@
     <header>
       <h1>My Contact Information</h1>
     </header>
-    <div class="container">
-      <div class="contact-info">
-        <div class="contact-item">
-          <img
-            class="contact-logo-email"
-            src="email-logo.png"
-            alt="Email Logo"
-          />
-          <a href="mailto:zahhod.sami@gmail.com">zahhod.sami@gmail.com</a>
-        </div>
-        <div class="contact-item">
-          <img
-            class="contact-logo-phone"
-            src="phone-logo.png"
-            alt="Phone Logo"
-          />
-          <a href="tel:+966557067312">+966557067312</a>
-        </div>
-        <div class="contact-item">
-          <img
-            class="contact-logo-instagram"
-            src="instagram-logo.png"
-            alt="Instagram Logo"
-          />
-          <a href="https://www.instagram.com/Zahid360" target="_blank"
-            >Zahid360 (Instagram)</a
-          >
-        </div>
-        <div class="contact-item">
-          <img class="contact-logo-x" src="X-logo.jpg" alt="Twitter Logo" />
-          <a href="https://x.com/Zahid360" target="_blank">Zahid360 (X)</a>
-        </div>
-        <div class="contact-item">
-          <img
-            class="contact-logo-facebook"
-            src="facebook-logo.png"
-            alt="Facebook Logo"
-          />
-          <a href="https://www.facebook.com/Zahid360" target="_blank"
-            >Zahid360 (Facebook)</a
-          >
-        </div>
-        <div class="contact-item">
-          <img
-            class="contact-logo-youtube"
-            src="youtube-logo.png"
-            alt="YouTube Logo"
-          />
-          <a href="https://www.youtube.com/Zahid360" target="_blank"
-            >Zahid360 (YouTube)</a
-          >
-        </div>
-        <div class="contact-item">
-          <img
-            class="contact-logo-location"
-            src="location-logo.png"
-            alt="Location Logo"
-          />
-          Dhahran, KFUPM
-        </div>
-      </div>
+    <section class="container">
+      <article class="contact-item">
+        <img
+          class="contact-logo contact-logo-email"
+          src="email-logo.png"
+          alt="Email Logo"
+        />
+        <a href="mailto:zahhod.sami@gmail.com">zahhod.sami@gmail.com</a>
+      </article>
+      <article class="contact-item">
+        <img
+          class="contact-logo contact-logo-phone"
+          src="phone-logo.png"
+          alt="Phone Logo"
+        />
+        <a href="tel:+966557067312">+966557067312</a>
+      </article>
+      <article class="contact-item">
+        <img
+          class="contact-logo contact-logo-instagram"
+          src="instagram-logo.png"
+          alt="Instagram Logo"
+        />
+        <a
+          href="https://www.instagram.com/Zahid360"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Zahid360 (Instagram)
+        </a>
+      </article>
+      <article class="contact-item">
+        <img
+          class="contact-logo contact-logo-x"
+          src="X-logo.jpg"
+          alt="Twitter Logo"
+        />
+        <a
+          href="https://x.com/Zahid360"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Zahid360 (X)
+        </a>
+      </article>
+      <article class="contact-item">
+        <img
+          class="contact-logo contact-logo-facebook"
+          src="facebook-logo.png"
+          alt="Facebook Logo"
+        />
+        <a
+          href="https://www.facebook.com/Zahid360"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Zahid360 (Facebook)
+        </a>
+      </article>
+      <article class="contact-item">
+        <img
+          class="contact-logo contact-logo-youtube"
+          src="youtube-logo.png"
+          alt="YouTube Logo"
+        />
+        <a
+          href="https://www.youtube.com/Zahid360"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Zahid360 (YouTube)
+        </a>
+      </article>
+      <article class="contact-item">
+        <img
+          class="contact-logo contact-logo-location"
+          src="location-logo.png"
+          alt="Location Logo"
+        />
+        Dhahran, KFUPM
+      </article>
       <form action="">
         <div style="margin-top: 40px">
-          <label> You can send me an email through the box below</label>
+          <label>You can send me an email through the box below</label>
           <div>
             <input
               type="text"
@@ -147,6 +135,6 @@
       <ul style="margin-top: 60px">
         <li><a href="myBlog.html">Back to Home</a></li>
       </ul>
-    </div>
+    </section>
   </body>
 </html>
