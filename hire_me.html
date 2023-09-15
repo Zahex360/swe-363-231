@@ -4,29 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hire Me - Zahid Alabadllah</title>
+    <link rel="stylesheet" href="dark_theme.css" />
+    <link rel="stylesheet" href="hire_me.css" />
   </head>
-  <body
-    style="
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      margin: 0;
-      padding: 0;
-    "
-  >
-    <header
-      style="
-        background-color: #333;
-        color: #fff;
-        text-align: center;
-        padding: 1rem 0;
-      "
-    >
-      <h1 style="font-size: 24px">Hire Me</h1>
+  <body>
+    <header>
+      <h1>Hire Me</h1>
     </header>
-    <section
-      class="container"
-      style="max-width: 800px; margin: 0 auto; padding: 20px"
-    >
+    <section class="container">
       <form action="thank_you.html">
         <label for="name">Your Name:</label>
         <input
@@ -36,13 +21,6 @@
           required
           placeholder="Ali Qhahtani"
           autocomplete="name"
-          style="
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 3px;
-          "
         />
 
         <label for="email">Your Email:</label>
@@ -53,47 +31,24 @@
           required
           placeholder="AliQhahtani@example.com"
           autocomplete="email"
-          style="
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 3px;
-          "
         />
 
         <label for="project-type">Type of Project:</label>
-        <input
-          type="text"
-          list="project-type"
-          style="
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 3px;
-          "
-        />
-        <datalist id="project-type" name="project-type" required>
+        <input type="text" list="project-type" name="project-type" required />
+        <datalist id="project-type">
           <option>Web Design</option>
           <option>App Development</option>
           <option>Graphic Design</option>
           <option>Other</option>
         </datalist>
 
-        <label style="font-size: 16px">Preferred Contact Method:</label>
+        <label for="contact">Preferred Contact Method:</label>
         <input
           type="text"
           list="preferred-contact"
           name="contact"
           id="contact"
-          style="
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 3px;
-          "
+          required
         />
         <datalist id="preferred-contact">
           <option value="Email"></option>
@@ -107,13 +62,6 @@
           rows="4"
           placeholder="Tell me about your project..."
           required
-          style="
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 3px;
-          "
         ></textarea>
 
         <label for="budget">Estimated Budget:</label>
@@ -123,22 +71,26 @@
           name="budget"
           placeholder="e.g., 5000 SR"
           required
-          style="
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 3px;
-          "
         />
 
-        <button type="submit" style="font-size: 16px">Submit</button>
+        <button type="submit">Submit</button>
       </form>
-      <aside style="margin-top: 60px">
+      <aside>
         <ul>
-          <li><a href="myBlog.html">Back to Home</a></li>
+          <li><a href="myBlog.html" style="color: #007bff">Back to Home</a></li>
         </ul>
       </aside>
     </section>
+    <footer
+    style="
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+    "
+  >
+  <p>&copy; 2023 Zahid Alabadllah. All rights reserved.</p>
+
+  <footer>
   </body>
 </html>
