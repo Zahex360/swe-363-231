@@ -3,3 +3,30 @@ body{
     color: rgb(255, 255, 255);
 }
 
+/* Change all header cells of the table to uppercase */
+table th {
+    text-transform: uppercase;
+  }
+  
+  /* Change all links to green color */
+  a {
+    color: green;
+  }
+  
+  /* Give top value cells a class of "top"  and
+  Change the background color of cells with class "top" to red gold */
+  .top {
+    background-color: #EB5406;
+    font-weight: bold;
+  }
+  
+
+  
+  /* Add <em> elements to 2 words/phrases that I want to emphasize in paragraphs */
+    /* Change the background of <em> elements to blue */
+
+  em{
+    font-style: italic;
+    background-color: blue;
+
+  }
