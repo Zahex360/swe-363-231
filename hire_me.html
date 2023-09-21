@@ -4,14 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hire Me - Zahid Alabadllah</title>
-    <link rel="stylesheet" href="dark_theme.css" />
+    <!-- <link rel="stylesheet" href="dark_theme.css" /> -->
     <link rel="stylesheet" href="hire_me.css" />
+    <link rel="stylesheet" href="css3ex1.css" />
+    <link rel="stylesheet" href="both.css" />
   </head>
-  <body>
-    <header>
-      <h1>hire me</h1>
-    </header>
-    <section class="container">
+  <header>
+    <nav class="Zahid">Zahid Alabadllah</nav>
+  </header>
+  <div class="Title" style="margin: 20px;">Hire me</div>
+  <section>
+    <div class="cont">
+      <label>
+        Here you can hire me to complete a project for you. <br />
+        Please fill the form below:
+      <label>
+
       <form action="thank_you.html">
         <label for="name">Your Name:</label>
         <input
@@ -21,16 +29,22 @@
           placeholder="Ali Qhahtani"
           autocomplete="name"
         />
-
         <label for="email">Your Email:</label>
         <input
           type="email"
           name="email"
           required
-          placeholder="AliQhahtani@example.com"
+          placeholder="Example: AliQhahtani@example.com"
           autocomplete="email"
         />
-
+        <label for="phone">Your phone number:</label>
+        <input
+          type="text"
+          name="phone"
+          required
+          placeholder="Exapmle: +966550000000 "
+          autocomplete="email"
+        />
         <label for="project-type">Type of Project:</label>
         <input type="text" list="project-type" name="project-type" required />
         <datalist id="project-type">
@@ -39,19 +53,12 @@
           <option>Graphic Design</option>
           <option>Other</option>
         </datalist>
-
         <label for="contact">Preferred Contact Method:</label>
-        <input
-          type="text"
-          list="preferred-contact"
-          name="contact"
-          required
-        />
+        <input type="text" list="preferred-contact" name="contact" required />
         <datalist id="preferred-contact">
           <option value="Email"></option>
           <option value="Phone"></option>
         </datalist>
-
         <label for="project-description">Project Description:</label>
         <textarea
           name="project-description"
@@ -59,31 +66,23 @@
           placeholder="Tell me about your project..."
           required
         ></textarea>
-
         <label for="budget">Estimated Budget:</label>
-        <input
-          type="text"
-          name="budget"
-          placeholder="e.g., 5000 SR"
-          required
-        />
-
+        <input type="text" name="budget" placeholder="e.g., 5000 SR" required />
         <button type="submit">Submit</button>
       </form>
-      <aside>
-          <a href="myBlog.html">Back to Home</a>
-      </aside>
-    </section>
-    <footer
-    style="
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      padding: 1rem 0;
-    "
-  >
-  <p>&copy; 2023 Zahid Alabadllah. All rights reserved.</p>
-
+    </div>
+  </section>
   <footer>
-  </body>
+    <div class="here">
+      <nav class="menu">
+        <ul>
+          <li><a href="myBlog.html">Back to home</a></li>
+        </ul>
+      </nav>
+
+      <p class="right">
+        &copy; 2023 <br />Zahid Alabadllah. <br />All rights reserved.
+      </p>
+    </div>
+  </footer>
 </html>
