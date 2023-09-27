@@ -55,11 +55,11 @@ nav li {
 }
 
 /* Change the link of the first nav item to underlined and others without */
-nav li:first-child a {
+.menu li:first-child a {
   text-decoration: underline;
 }
 
-nav li:not(:first-child) a {
+.menu li:not(:first-child) a {
   text-decoration: none;
 }
 
@@ -93,4 +93,77 @@ textarea {
 /* Change input of name message height to 50px */
 input[name="message"] {
   height: 50px;
+}
+
+/* styles.css */
+button {
+  background-color: #3498db; /* Initial background color */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+button:hover {
+  background-color: #e74c3c; /* New background color on hover */
+}
+/* Reset default margin and padding */
+body,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the navbar */
+.navbar {
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  display: flex;
+  top: -35px;
+}
+
+/* Style the hamburger icon */
+.hamburger {
+  cursor: pointer;
+  font-size: 24px;
+  margin-top: -4px;
+}
+
+/* Hide the navigation list by default */
+.nav-list {
+  display: none;
+  padding: 0;
+  margin-left: 20px;
+}
+
+/* Style the individual menu items */
+.nav-list li {
+  margin-right: 30px;
+}
+
+/* Style the links */
+.nav-list li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+/* Show the navigation list when hovering over the hamburger icon */
+.navbar:hover .nav-list {
+  display: block;
+}
+
+/* Add a delay effect for individual menu items */
+.nav-list li:nth-child(1) {
+  transition-delay: 0.2s; /* Delay for the first item */
+}
+
+.nav-list li:nth-child(2) {
+  transition-delay: 0.4s; /* Delay for the second item */
+}
+
+.nav-list li:nth-child(3) {
+  transition-delay: 0.6s; /* Delay for the third item */
 }
