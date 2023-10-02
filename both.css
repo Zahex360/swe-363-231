@@ -167,3 +167,42 @@ ul {
 .nav-list li:nth-child(3) {
   transition-delay: 0.6s; /* Delay for the third item */
 }
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  width: 250px;
+  background-color: #f0f0f0;
+}
+section {
+  width: fit-content;
+  height: fit-content;
+}
+
+.postcard figure {
+  position: relative;
+}
+
+.postcard figure::before {
+  content: "ZAHID";
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  font-size: 40px;
+  color: rgba(255, 0, 0, 0.3);
+}
+
+.postcard .head_body {
+  position: relative;
+}
+
+.head_body .title-date-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.date {
+  margin-left: 20px;
+}
