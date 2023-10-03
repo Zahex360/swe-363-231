@@ -168,12 +168,29 @@ ul {
   transition-delay: 0.6s; /* Delay for the third item */
 }
 
-.sidebar {
+.English .sidebar {
   position: absolute;
   top: 0;
   right: 0px;
   width: 250px;
   background-color: #f0f0f0;
+}
+
+.arabic .sidebar {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 250px;
+  background-color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+  .arabic .sidebar,
+  .English .sidebar {
+    position: relative; /* Reset position to be relative */
+    width: 100%; /* Make it full width on mobile screens */
+    margin-top: 20px; /* Add spacing between postcards */
+  }
 }
 section {
   width: fit-content;
@@ -182,6 +199,10 @@ section {
 
 .postcard figure {
   position: relative;
+}
+
+.nav-list li a:hover {
+  color: #ff5733;
 }
 
 .postcard figure::before {
@@ -205,4 +226,67 @@ section {
 
 .date {
   margin-left: 20px;
+}
+
+.cont {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Mobile-friendly styles for smaller screens */
+@media (max-width: 768px) {
+  .cont {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .postcard {
+    width: 100%; /* Make postcards full width */
+    margin-bottom: 20px; /* Add spacing between postcards */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .navbar {
+    padding: 10px;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 110px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    left: -10;
+    margin: 0;
+    padding: 10px;
+    z-index: 1;
+  }
+
+  .nav-list li {
+    margin: 10px 0;
+  }
+
+  .nav-list li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: color 0.3s ease;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .nav-list li a:hover {
+    color: #ff5733;
+  }
 }
