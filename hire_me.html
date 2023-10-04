@@ -1,90 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hire Me - Zahid Alabadllah</title>
-    <!-- <link rel="stylesheet" href="dark_theme.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
     <link rel="stylesheet" href="hire_me.css" />
     <link rel="stylesheet" href="css3ex1.css" />
     <link rel="stylesheet" href="both.css" />
-    <link rel="stylesheet" href="desktop.css">
+    <link rel="stylesheet" href="desktop.css" />
   </head>
-  <header>
-    <nav class="Zahid">Zahid Alabadllah</nav>
-  </header>
-  <div class="Title" style="margin: 20px;">Hire me</div>
-  <section>
-    <div class="cont">
-      <label>
-        Here you can hire me to complete a project for you. <br />
-        Please fill the form below:
-      <label>
-
-      <form action="thank_you.html">
-        <label for="name">Your Name:</label>
-        <input
-          type="text"
-          name="name"
-          required
-          placeholder="Ali Qhahtani"
-          autocomplete="name"
-        />
-        <label for="email">Your Email:</label>
-        <input
-          type="email"
-          name="email"
-          required
-          placeholder="Example: AliQhahtani@example.com"
-          autocomplete="email"
-        />
-        <label for="phone">Your phone number:</label>
-        <input
-          type="text"
-          name="phone"
-          required
-          placeholder="Exapmle: +966550000000 "
-          autocomplete="email"
-        />
-        <label for="project-type">Type of Project:</label>
-        <input type="text" list="project-type" name="project-type" required />
-        <datalist id="project-type">
-          <option>Web Design</option>
-          <option>App Development</option>
-          <option>Graphic Design</option>
-          <option>Other</option>
-        </datalist>
-        <label for="contact">Preferred Contact Method:</label>
-        <input type="text" list="preferred-contact" name="contact" required />
-        <datalist id="preferred-contact">
-          <option value="Email"></option>
-          <option value="Phone"></option>
-        </datalist>
-        <label for="project-description">Project Description:</label>
-        <textarea
-          name="project-description"
-          rows="4"
-          placeholder="Tell me about your project..."
-          required
-        ></textarea>
-        <label for="budget">Estimated Budget:</label>
-        <input type="text" name="budget" placeholder="e.g., 5000 SR" required />
-        <button type="submit">Submit</button>
-      </form>
-    </div>
-  </section>
-  <footer>
-    <div class="here">
-      <nav class="menu">
-        <ul>
-          <li><a href="myBlog.html">Back to home</a></li>
-        </ul>
+  <body>
+    <header>
+      <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand">Zahid Alabadllah</a>
       </nav>
+      <div class="Title" style="margin: 20px">Hire me</div>
+    </header>
+    <section class="container">
+      <div class="cont">
+        <label>
+          Here you can hire me to complete a project for you. <br />
+          Please fill the form below:
+        </label>
 
-      <p class="right">
-        &copy; 2023 <br />Zahid Alabadllah. <br />All rights reserved.
-      </p>
-    </div>
-  </footer>
+        <form action="thank_you.html" class="mt-4">
+          <div class="form-group">
+            <label for="name">Your Name:</label>
+            <input
+              type="text"
+              class="form-control"
+              name="name"
+              required
+              placeholder="Ali Qhahtani"
+              autocomplete="name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email:</label>
+            <input
+              type="email"
+              class="form-control"
+              name="email"
+              required
+              placeholder="Example: AliQhahtani@example.com"
+              autocomplete="email"
+            />
+          </div>
+          <div class="form-group">
+            <label for="phone">Your phone number:</label>
+            <input
+              type="text"
+              class="form-control"
+              name="phone"
+              required
+              placeholder="Exapmle: +966550000000 "
+              autocomplete="email"
+            />
+          </div>
+          <div class="form-group">
+            <label for="project-type">Type of Project:</label>
+            <input
+              type="text"
+              class="form-control"
+              list="project-type"
+              name="project-type"
+              required
+            />
+            <datalist id="project-type">
+              <option>Web Design</option>
+              <option>App Development</option>
+              <option>Graphic Design</option>
+              <option>Other</option>
+            </datalist>
+          </div>
+          <div class="form-group">
+            <label for="contact">Preferred Contact Method:</label>
+            <input
+              type="text"
+              class="form-control"
+              list="preferred-contact"
+              name="contact"
+              required
+            />
+            <datalist id="preferred-contact">
+              <option value="Email"></option>
+              <option value="Phone"></option>
+            </datalist>
+          </div>
+          <div class="form-group">
+            <label for="project-description">Project Description:</label>
+            <textarea
+              name="project-description"
+              class="form-control"
+              rows="4"
+              placeholder="Tell me about your project..."
+              required
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <label for="budget">Estimated Budget:</label>
+            <input
+              type="text"
+              class="form-control"
+              name="budget"
+              placeholder="e.g., 5000 SR"
+              required
+            />
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="here">
+        <nav class="menu">
+          <ul>
+            <li><a href="myBlog.html">Back to home</a></li>
+          </ul>
+        </nav>
+        <p class="right">
+          &copy; 2023 <br />Zahid Alabadllah. <br />All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
