@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="desktop.css" media="(min-width: 770px)" />
+    <script src="tic-tac.js" defer></script>
 
     <title>Document</title>
     <style>
@@ -35,6 +36,10 @@
 
       .row {
         display: flex;
+      }
+
+      .active-cell {
+        background-color: lightblue !important;
       }
     </style>
   </head>
@@ -148,8 +153,9 @@
           document.querySelector("#win_draw").innerHTML =
             "Now it's <span id='turn'></span> turn";
           document.querySelector("#turn").innerText = turn;
-          let board = document.getElementsByClassName("board")[0];
-          board.addEventListener("click", cellClicked);
+          cells[activeCell].classList.remove("active-cell");
+          cells[0].classList.add("active-cell");
+          activeCell = 0;
         }
       </script>
     </div>
