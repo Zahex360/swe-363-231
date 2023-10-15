@@ -18,9 +18,12 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
 
     <script src="list.js" defer></script>
     <script src="keyboard_nav.js" defer></script>
+    <script src="API.js" defer></script>
 
     <link rel="stylesheet" href="css3ex1.css" />
     <link rel="stylesheet" href="both.css" />
@@ -58,7 +61,7 @@
 
     <section class="container">
       <div class="row">
-        <div class="col-md-4">
+        <!-- <div class="col-md-4">
           <div class="sidebar">
             <div class="postcard">
               <figure>
@@ -82,10 +85,10 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <div class="col-md-8" id="container">
-          <article>
+          <!--<article>
             <div class="postcard">
               <figure>
                 <img src="images/AI.jpg" alt="AI Image" class="img-fluid" />
@@ -143,7 +146,22 @@
                 </p>
               </div>
             </div>
-          </article>
+          </article> -->
+          <article>
+            <div class="postcard">
+                <figure>
+                    <img class="article-image"/><img src="" alt="">
+                </figure>
+                <div class="head_body">
+                    <div class="title-date-container">
+                        <h2 class="article-title"></h2>
+                        <p class="article-date"></p>
+                    </div>
+                    <p class="article-content"></p>
+                </div>
+        </div>
+        </article>
+        
         </div>
       </div>
     </section>
@@ -178,6 +196,8 @@
         });
       });
     </script>
+        <!-- <div id="threejs-container"></div> -->
+
   </body>
 </html>
-``
+
