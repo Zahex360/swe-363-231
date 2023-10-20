@@ -131,8 +131,6 @@
             />
           </div>
 
-          <!-- Signature Canvas -->
-
           <div class="form-group">
             <label for="signature">Your Signature:</label>
             <canvas id="signatureCanvas" width="400" height="150"></canvas>
@@ -156,5 +154,66 @@
         </p>
       </div>
     </footer>
+    <script>
+      //Salam, Since these function were not a good fit to my website idea, I applied them here in this extra idea.
+      //This code demonstrates the use of map, reduce, and filter functions for managing and analyzing a list
+      //of projects with various types and budgets. It filters high-budget projects, calculates the average
+      //budget, and creates a new list of project descriptions.
+
+      function manageProjects() {
+        // Sample list of projects
+        const projects = [
+          {
+            type: "Web Design",
+            budget: 5000,
+            description: "Design a new website",
+          },
+          {
+            type: "App Development",
+            budget: 8000,
+            description: "Develop a mobile app",
+          },
+          {
+            type: "Graphic Design",
+            budget: 3000,
+            description: "Create marketing materials",
+          },
+          {
+            type: "Web Design",
+            budget: 6000,
+            description: "Redesign existing website",
+          },
+          {
+            type: "App Development",
+            budget: 9000,
+            description: "Build a custom app",
+          },
+        ];
+
+        // Filter projects with a budget above 6000
+        const highBudgetProjects = projects.filter(
+          (project) => project.budget > 6000
+        );
+
+        // Calculate the average budget for all projects
+        const totalBudget = projects.reduce(
+          (sum, project) => sum + project.budget,
+          0
+        );
+        const averageBudget = totalBudget / projects.length;
+
+        // Create a new list of project descriptions
+        const projectDescriptions = projects.map(
+          (project) => project.description
+        );
+
+        console.log("High Budget Projects:", highBudgetProjects);
+        console.log("Average Budget:", averageBudget);
+        console.log("Project Descriptions:", projectDescriptions);
+      }
+
+      // Call the manageProjects function when the page loads
+      window.addEventListener("load", manageProjects);
+    </script>
   </body>
 </html>

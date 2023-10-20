@@ -66,9 +66,16 @@ const createArticle = (post) => {
   return article;
 };
 
+// Check if the blogContainer element exists
 const blogContainer = document.getElementById("container");
 
-blogPosts.forEach(post => {
-  const article = createArticle(post);
-  blogContainer.appendChild(article);
-});
+if (blogContainer) {
+  // Here I used the map function to create articles from blogPosts
+  const articles = blogPosts.map(post => createArticle(post));
+
+  articles.forEach(article => {
+    blogContainer.appendChild(article);
+  });
+} else {
+  console.error("blogContainer not found.");
+}

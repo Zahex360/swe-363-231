@@ -21,10 +21,18 @@
   signatureCanvas.addEventListener('mouseup', () => (isDrawing = false));
   signatureCanvas.addEventListener('mouseout', () => (isDrawing = false));
 
-  clearSignatureButton.addEventListener('click', () => {
-    context.clearRect(0, 0, signatureCanvas.width, signatureCanvas.height);
-    signatureInput.value = '';
-  });
+  // Here I refactored the clearSignatureButton event listener using reduce
+clearSignatureButton.addEventListener('click', () => {
+  [context, signatureInput].reduce((_, item) => {
+    if (item === signatureInput) {
+      item.value = '';
+    } else {
+      item.clearRect(0, 0, signatureCanvas.width, signatureCanvas.height);
+    }
+    return null;
+  }, null);
+});
+
 
   function draw(e) {
     if (!isDrawing) return;
