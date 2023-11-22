@@ -1,37 +1,26 @@
 const express = require('express');
 const app = express();
-const path = require('path');
-const port = 5000; 
+const port = 5000;
 
 app.use(express.static('./public'));
 
-app.get('/', (req, res) => {
-  res.sendFile(path.resolve(__dirname,'../myBlog.html'));
-});
+const homeRoutes = require('./routes/home');
+const aboutRoutes = require('./routes/about');
+const contactRoutes = require('./routes/contact');
+const hireMeRoutes = require('./routes/hire_me');
+const miniGamesRoutes = require('./routes/minigames');
+const myBlogARRoutes = require('./routes/myblog-ar');
+const thankYouRoutes = require('./routes/thank_you');
 
-app.get('/about', (req, res) => {
-  res.sendFile(path.resolve(__dirname,'../about.html'));
-});
 
-app.get('/contact', (req, res) => {
-  res.sendFile(path.resolve(__dirname,'../contact.html'));
-});
 
-app.get('/hire_me', (req, res) => {
-  res.sendFile(path.resolve(__dirname,'../hire_me.html'));
-});
-
-app.get('/minigames', (req, res) => {
-  res.sendFile(path.resolve(__dirname,'../minigames.html'));
-});
-
-app.get('/myblog-ar', (req, res) => {
-  res.sendFile(path.resolve(__dirname, '../myblog-ar.html'));
-});
-
-app.get('/thank_you', (req, res) => {
-  res.sendFile(path.resolve(__dirname, '../thank_you.html'));
-});
+app.use('/', homeRoutes);
+app.use('/about', aboutRoutes);
+app.use('/contact', contactRoutes);
+app.use('/hire_me', hireMeRoutes);
+app.use('/minigames', miniGamesRoutes);
+app.use('/myblog-ar', myBlogARRoutes);
+app.use('/thank_you', thankYouRoutes);
 
 
 app.listen(port, () => {
