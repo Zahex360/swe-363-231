@@ -13,11 +13,13 @@ const myBlogARRoutes = require('./routes/myblog-ar');
 const thankYouRoutes = require('./routes/thank_you');
 
 
+// Import the middleware function
+const processHireFormMiddleware = require('./hireMeMiddleware');
 
 app.use('/', homeRoutes);
 app.use('/about', aboutRoutes);
 app.use('/contact', contactRoutes);
-app.use('/hire_me', hireMeRoutes);
+app.use('/hire_me', processHireFormMiddleware); //pass the middleware function for the form
 app.use('/minigames', miniGamesRoutes);
 app.use('/myblog-ar', myBlogARRoutes);
 app.use('/thank_you', thankYouRoutes);
